@@ -7,8 +7,9 @@ int wordCount(char buf[])
 		if (buf[i] != ' ')
 		{
 			ans++;
-			while (buf[i] != ' ')
+			while (buf[i]&&buf[i] != ' ')
 				i++;
+			i--;
 		}
 		i++;
 	}
