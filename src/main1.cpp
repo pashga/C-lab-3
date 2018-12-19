@@ -22,7 +22,7 @@ int main()
 		if (i == BUFF - 1)
 			buf[i] = '\0';					  // конец строки
 	}
-	printf("The string is %s \n", buf);
+	printf("The string is\n %s \n", buf);
 	
 	printf("\nThe line has %d words", wordCount(buf));
 
