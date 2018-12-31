@@ -9,7 +9,7 @@ int getMaxWord(char buf[], char word[])
 			countLetter++;
 		else 
 		{
-			if (countLetter > max)
+			if (countLetter >= max)
 			{
 				max = countLetter;
 				k = i - max;
