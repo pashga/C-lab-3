@@ -7,7 +7,7 @@ int getMaxWord(char buf[], char word[])
 	{
 		if (buf[i] != ' ')
 			countLetter++;
-		else if (buf[i] == ' ')
+		else 
 		{
 			if (countLetter > max)
 			{
