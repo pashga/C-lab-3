@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include <string.h>
 
 int getMaxWord(char buf[], char word[])
 {
 	int i = 0, j = 0, k = 0, max = 0, countLetter = 0;
-	for (i = 0; buf[i] != '\0'; i++)
+	while(buf[i])
 	{
 		if (buf[i] != ' ')
 			countLetter++;
@@ -19,7 +19,7 @@ int getMaxWord(char buf[], char word[])
 			}
 			countLetter = 0;
 		}
-		
+		i++;
 	}
 	return max;
 }
