@@ -1,5 +1,6 @@
 #include "task3.h"
 #include <ctype.h> // for isspace()
+#include <stdio.h>
 
 
 int getMaxWord(char buf[], char word[])
