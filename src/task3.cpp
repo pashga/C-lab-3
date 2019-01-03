@@ -36,12 +36,13 @@ int getMaxWord(char buf[], char word[])
 		}
 	}
 
-
-	for (int i = 0; i<max_letters; )
+	int i = 0;
+	while (i<max_letters)
 	{
 		word[i++] = *(ptr++);
-		word[i] = '\0';
+		
 	}
+	word[i] = '\0';
 
 	return max_letters;
 }
