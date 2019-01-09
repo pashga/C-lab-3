@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int getSumInt(int arr[],int N){
-    int flag = 0; // 0 - число < 0 / 1 - число > 0
+    
     int i = 0, sum = 0;
-    for(i = 0; i<N; i++){
-        if(arr[i] > 0)
-            flag = 1;
-        if(arr[i] < 0)
-            flag = 0;
-        if(i != 0 && flag == 1){
-            sum = sum + arr[i] + arr[i-1];
-            flag = 0;
-        }
-    }
+    int start, end; // start - первое отрицательное; end - посленее положительное
+    while (arr[i] >= 0)
+        i++;
+    start = i; // первое отрицательное
+    i = N - 1;
+    while (arr[i] <= 0)
+        i--;
+    end = i; // первое положительное
+    for (i = start+1; i <= end-1; i++)
+        sum += arr[i];
     return sum;
 }

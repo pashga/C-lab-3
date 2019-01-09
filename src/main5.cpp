@@ -24,7 +24,7 @@
 #include <stdlib.h>
 #include "task5.h"
 #include <time.h>
-#define N 11
+#define N 10
 
 int main(void){
     int arr[N];
@@ -37,6 +37,6 @@ int main(void){
             arr[i] = rand() % 10 +1;
         printf("%d ", arr[i]);
     }
-    printf(" -> %d\n", getSumInt(arr, N));
+    printf("->%d\n", getSumInt(arr, N));
     
 }

@@ -18,12 +18,12 @@
 #include <stdio.h>
 #include <string.h>
 #include "task3.h"
-#define N 1000
+#define N 256
 
 int main()
 {
     char buf [N];
-    char word [N] = { 0 };
+    char word [N];
     printf("Just enter something:\n");
     fgets(buf, N, stdin);
     printf("Longest word is:\n");

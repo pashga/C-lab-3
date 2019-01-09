@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "task1.h"
-#define N 1000
+#define N 256
 
 
 int main(){
