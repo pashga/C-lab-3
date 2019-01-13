@@ -17,7 +17,7 @@ int getMaxWord(char buf[],char word[])
                     word[j] = theLongestWord[j];        //помещаем в массив самое длинное слово
             }
         }
-            else                                        //иначе при встрече с пробелом зануляем счётчик
+            else if(buf[i] =' ')                     //иначе при встрече с пробелом зануляем счётчик
                 count = 0;
     }
     return maxWord;
