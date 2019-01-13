@@ -20,5 +20,5 @@ int getMaxWord(char buf[],char word[])
             else                                        //иначе при встрече с пробелом зануляем счётчик
                 count = 0;
     }
-    return getMaxWord;
+    return word;
 }
