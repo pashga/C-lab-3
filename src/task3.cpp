@@ -4,7 +4,7 @@ int getMaxWord(char buf[],char word[])
     int i, j, count, maxWord;
     char theLongestWord[128];
 
-    for(i = 0; buf[i] !='\n'; i++)                      //идём по строке пока не дойдём до конца
+    for(i = 0; buf[i] !='\0'; i++)                      //идём по строке пока не дойдём до конца
     {
         if(buf[i] !=' ')                               //идём по куску строки (слову) до пробела
         {
