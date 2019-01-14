@@ -2,24 +2,25 @@
 
 int getMaxWord(char buf[], char word[])
 {
-	int i = 0, j = 0, k = 0, max = 0, countLetter = 0;
-	while(buf[i])
+	int j , k = 0, q, max = 0, countLetter = 0, str = 0;
+	str = strlen(buf);
+	for (int i = 0; i < str; i++)
 	{
 		if (buf[i] != ' ')
 			countLetter++;
-		else 
+		else if (buf[i] == ' ' || buf[i] == '\0')
 		{
 			if (countLetter >= max)
 			{
 				max = countLetter;
 				k = i - max;
-				for (j = 0, i = k; j < max; j++, i++)
-					word[j] = buf[i];
+				for (q = k, j = 0; j < max; j++, q++)
+					word[j] = buf[q];
 				word[j] = '\0';
 			}
 			countLetter = 0;
 		}
-		i++;
+
 	}
 	return max;
 }

@@ -12,7 +12,6 @@ int main()
 	fgets(buf, N, stdin);
 	if (buf[strlen(buf) - 1] == '\n')
 		buf[strlen(buf) - 1] = '\0 ';
-
 	printf("%s %d", word, getMaxWord(buf, word));
 	return 0;
 }
