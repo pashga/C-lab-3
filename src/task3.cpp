@@ -4,11 +4,11 @@ int getMaxWord(char buf[], char word[])
 {
 	int j , k = 0, q, max = 0, countLetter = 0, str = 0;
 	str = strlen(buf);
-	for (int i = 0; i < str; i++)
+	for (int i = 0; i < str+1; i++)
 	{
-		if (buf[i] != ' ')
+		if (buf[i] != ' ' && buf[i] != '\0')
 			countLetter++;
-		else if (buf[i] == ' ' || buf[i] == '\0')
+		else 
 		{
 			if (countLetter >= max)
 			{
