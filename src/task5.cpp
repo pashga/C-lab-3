@@ -13,12 +13,12 @@ int getSumInt(int arr[], int N)
 		start = temp;
 	}
 	start++;
-	int summa = 0;
+	int sum = 0;
 	while (start < end)
 	{
-		summa += arr[start];
+		sum += arr[start];
 		start++;
 	}
 
-	return summa;
+	return sum;
 }
