@@ -1,9 +1,10 @@
+#include <string.h>
 int getMaxWord(char buf[], char word[])
 {
-	int i = 0, count = 0, top = 0;
-	while (buf[i] != '\0')
+	int i = 0, count = 0, top = 0, end = strlen(buf);
+	while (i<=end)
 	{
-		if (buf[i] != ' ' && buf[i]!='\n')
+		if (buf[i] != ' ' && buf[i]!='\n' && buf[i] != '\0')
 		{
 			count++;
 

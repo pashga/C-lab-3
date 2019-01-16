@@ -8,7 +8,7 @@ int main()
 	char buf[N],word[N];
 	fgets(buf, 255, stdin);
 	int countS = getMaxWord(buf, word);
-	//printf("\nMaxWord: %S", word);
+	printf("\nMaxWord: %S", word);
 	for (int i = 0; word[i] != '\0'; i++)
 	{
 		printf("%c", word[i]);

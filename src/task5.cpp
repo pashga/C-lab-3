@@ -8,7 +8,8 @@ int getSumInt(int arr[], int N)
 	while (arr[start] >= 0)
 		start++;
 	int summa = 0;
-	while (start <= end)
+	start++;
+	while (start < end)
 	{
 		summa += arr[start];
 		start++;
