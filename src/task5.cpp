@@ -1,6 +1,6 @@
 int getSumInt(int arr[], int N)
 {
-	int end = N;
+	int end = N-1;
 	while (arr[end] < 0)//поиск последнего положительного
 		end--;
 	int start = 0;
