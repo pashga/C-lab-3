@@ -17,5 +17,5 @@ int getMaxWord(char buf[], char word[])
 		i++;
 
 	}
-	return countOfLetters-1;
+	return countOfLetters;
 }

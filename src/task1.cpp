@@ -25,5 +25,5 @@ int wordCount(char buf[])
 			m++;
 		}
 	}
-	return m;
+	return m+1;
 }

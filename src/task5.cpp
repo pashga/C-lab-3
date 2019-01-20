@@ -9,7 +9,7 @@
 
 int getSumInt(int arr[], int N)
 {
-	int i, j, k, con, index, sum = 0;
+	int i=0, j=0, k=0, con=0, index=0, sum = 0;
 	for (j = 0; j < N; j++)
 	{
 		if (arr[j] < 0)
@@ -27,7 +27,7 @@ int getSumInt(int arr[], int N)
 		if (arr[k] > 0)
 			con = k;
 	}
-	for (index; index <= con; index++)
+	for (index=index+1; index < con; index++)
 	{
 		sum += arr[index];
 	}

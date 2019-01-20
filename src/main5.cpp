@@ -12,7 +12,7 @@ int * elemenOfMassive(int *arr, int N)
 		arr[i] = rand() % 100 - 50;
 		printf("%d ", arr[i]);
 	}
-
+	arr[N] = '\0';
 	return arr;
 }
 int main()
