@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "task3.h"
-#define N 255
+#define N 256
 
 
 int main()

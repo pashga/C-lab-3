@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-#define M 255
+#define M 256
 int * elemenOfMassive(int *arr, int N)
 {
 	srand(time(0));
