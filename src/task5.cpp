@@ -5,8 +5,6 @@
 #include "task5.h"
 
 
-
-
 int * elemenOfMassive(int *arr,int N)
 {
 	srand(time(0));

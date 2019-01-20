@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "task4.h"
-
+#define N 255
 int main()
 {
 	char buf[N] = { 0 };

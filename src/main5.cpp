@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
+#define M 255
 int main()
 {
 	int N = 0;

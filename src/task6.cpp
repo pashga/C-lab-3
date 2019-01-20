@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int  *elemenOfMassive(int *arr, int N)
+int  elemenOfMassive(int arr[], int N)
 {
 	
 	srand(time(0));
@@ -13,7 +13,7 @@ int  *elemenOfMassive(int *arr, int N)
 		printf("%d ", arr[i]);
 	}
 	
-	return arr;
+	return 0;
 }
 
 int getSumMaxMin(int arr[], int N)
