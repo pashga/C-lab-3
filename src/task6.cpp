@@ -2,19 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int  elemenOfMassive(int arr[], int N)
-{
-	
-	srand(time(0));
-	for (int i = 0; i < N; i++)
-	{
-		arr[i] = rand() % 100 - 50;
-		arr[N] = '\0';
-		printf("%d ", arr[i]);
-	}
-	
-	return 0;
-}
+
 
 int getSumMaxMin(int arr[], int N)
 {

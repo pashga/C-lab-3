@@ -5,17 +5,7 @@
 #include "task5.h"
 
 
-int * elemenOfMassive(int *arr,int N)
-{
-	srand(time(0));
-	for (int i = 0; i < N; i++)
-	{
-		arr[i] = rand() % 100 - 50;
-		printf("%d ", arr[i]);
-	}
 
-	return arr;
-}
 
 int getSumInt(int arr[], int N)
 {

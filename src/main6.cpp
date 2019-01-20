@@ -15,7 +15,22 @@
 
 #include <stdio.h>
 #include "task6.h"
+#include <time.h>
+#include <stdlib.h>
 
+int  elemenOfMassive(int arr[], int N)
+{
+
+	srand(time(0));
+	for (int i = 0; i < N; i++)
+	{
+		arr[i] = rand() % 100 - 50;
+		arr[N] = '\0';
+		printf("%d ", arr[i]);
+	}
+
+	return 0;
+}
 int main()
 {
 	int arr[256] = { 0 };
