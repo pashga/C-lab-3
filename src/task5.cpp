@@ -6,7 +6,7 @@ int getSumInt(int arr[], int N)
 	while (arr[i] >= 0 && i < N)
 		i++;
 	i++;
-	while (arr[j] < 0 && j>0)
+	while (arr[j] <= 0 && j>0)
 		j--;
 	j--;
 	while (i < j)
