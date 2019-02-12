@@ -1,26 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+#define N 256
+
 int getMaxWord(char buf[], char word[])
 {
-	int i = 0, j = 0;
-	int longest_word = 0;
-	int countLetter = 0;
-	int a = 0;
-	while (buf[i])
+	int max_count = 0, count = 0, i = 0;
+	char temp_word[N];
+
+	if (buf[strlen(buf) - 1] == '\n')
+		buf[strlen(buf) - 1] = '\0';
+	while (buf[i] != '\0')
 	{
 		if (buf[i] != ' ')
-			countLetter++;
-		else
 		{
-			if (countLetter >= longest_word)
+			int j = 0;
+			while (buf[i] != ' ' && buf[i] != '\0')
 			{
-				longest_word = countLetter;
-				a = i - longest_word;
-				for (j = 0, i = a; j < longest_word; j++, i++)
-					word[j] = buf[i];
-				word[j] = '\0';
+				temp_word[j] = buf[i];
+				count++;
+				i++;
+				j++;
 			}
-			countLetter = 0;
+			temp_word[j] = '\0';
+			if (count > max_count)
+			{
+				max_count = count;
+				sprintf(word, "%s", temp_word);
+			}
+			count = j = 0;
 		}
-		i++;
+		else if (buf[i] == ' ')
+		{
+			while (buf[i] == ' ')
+				i++;
+		}
 	}
-	return longest_word;
+	return max_count;
 }
